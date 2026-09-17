@@ -1,0 +1,30 @@
+[project]
+name = "langchain-multi-agent-research"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ali karnib", email = "alikarnib1110@gamil.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.12.0",
+    "google-search-results>=2.4.2",
+    "langchain>=0.2.0",
+    "langchain-community>=0.2.0",
+    "langchain-core>=0.2.0",
+    "langchain-google-genai>=1.0.0",
+    "lxml>=5.0.0",
+    "python-dotenv>=1.0.0",
+    "readability-lxml>=0.9",
+    "requests>=2.31.0",
+    "streamlit>=1.0.0",
+    "trafilatura>=2.2.0",
+]
+
+[project.scripts]
+langchain-multi-agent-research = "langchain_multi_agent_research:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
